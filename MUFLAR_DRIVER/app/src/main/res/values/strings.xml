@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MUFLAR_DRIVER</string>
+    <string name="SendOTP">Send OTP</string>
+    <string name="phoneno">Phone no</string>
+    <string name="next">NEXT</string>
+    <string name="muflarcardno">Muflar card no</string>
+    <string name="busrouteno">Bus route no</string>
+
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="fogotpassword">FORGOT PASSWORD?</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="verify">VERIFY</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="mani">Mani...</string>
+    <string name="karb">Karb...</string>
+    <string name="busroutedetail">Bus stop Detail</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="enter">enter</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="search">Search</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muflar_driver.activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:visibility="gone"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+
+    <ImageView
+        android:id="@+id/drawer"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:tint="@color/colorred"
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_dehaze_black_24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        tools:ignore="VectorDrawableCompat"></ImageView>
+
+</android.support.design.widget.CoordinatorLayout>

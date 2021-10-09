@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#fff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorwhite">#fff</color>
+    <color name="colordarkgray">#464646</color>
+    <color name="colorred">@android:color/holo_red_dark</color>
+    <color name="colorlightgray">#888888</color>
+    <color name="tranparentwhite">#EAEAEA</color>
+    <color name="colorgreen">#00CC00</color>
+    <color name="colorparrot">#40FF00</color>
+    <color name="darkgreen">#67C100</color>
+    <color name="colorblack">#000</color>
+
+    <color name="color_login_button">#FF3366</color>
+    <color name="color_login_buttonpress">#EE3162</color>
+    <color name="color_signup_button">#F2F2F2</color>
+    <color name="color_signup_buttonpress">#EBEBEB</color>
+
+    <color name="colorPrimary_alpha33">#64e42604</color>
+    <color name="gravy_light">#999999</color>
+</resources>

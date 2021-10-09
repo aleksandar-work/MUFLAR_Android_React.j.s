@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:textSize="18dp"
+            android:layout_marginLeft="75dp"
+            android:gravity="left"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:text="Bus stop details"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="@string/search"
+                android:textStyle="italic"
+                android:textSize="13dp"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorred"
+                android:textColorHint="@color/colorred"
+                android:paddingLeft="15dp"
+                android:background="@drawable/searchview_shape"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/btn_busStop"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:text="@string/enter"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorwhite"
+                android:textStyle="bold"
+                android:background="@drawable/button_shapetwo"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list_stop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </ListView>
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:clickable="true"
+        android:id="@+id/loading_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/muflarloading"
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:background="@drawable/loading_background"
+        />
+
+</RelativeLayout>

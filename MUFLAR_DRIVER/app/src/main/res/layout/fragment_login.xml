@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:agus="http://android.support.percent.PercentRelativeLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/splash"
+        android:id="@+id/fragmentloginKenBurnsView1"/>
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:alpha="0"
+        android:id="@+id/fragmentloginView1"/>
+
+    <ImageView
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/muflar"
+        android:id="@+id/fragmentloginLogo"
+        android:alpha="0"/>
+
+    <RelativeLayout
+        android:id="@+id/form_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:padding="30dp"
+        app:layout_marginTopPercent="50%">
+
+        <ImageView
+            android:id="@+id/mainImageView1"
+            android:layout_width="@dimen/login_holder_height"
+            android:layout_height="@dimen/login_holder_height"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/user_icon"
+            android:tint="#ffffff" />
+
+        <ImageView
+            android:id="@+id/mainImageView2"
+            android:layout_width="@dimen/login_holder_height"
+            android:layout_height="@dimen/login_holder_height"
+            android:layout_below="@id/mainImageView1"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/password_icon"
+            android:tint="#ffffff" />
+
+        <EditText
+            android:id="@+id/et_bus_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mainImageView1"
+            android:layout_alignTop="@id/mainImageView1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/mainImageView1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Muflar Bus ID"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_bus_id"
+            android:layout_marginTop="@dimen/login_horizontalline_spacing"
+            android:background="#111111" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mainImageView2"
+            android:layout_alignTop="@id/mainImageView2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/mainImageView2"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_password"
+            android:layout_marginTop="@dimen/login_horizontalline_spacing"
+            android:background="#111111" />
+
+        <TextView
+            android:id="@+id/forgot_pwd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/et_password"
+            android:gravity="right|center_vertical"
+            android:text="Forgot Password?"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_signup_option"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_marginTopPercent="85%"
+        android:orientation="vertical"
+        android:alpha="0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="OR"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/label_signup"
+        android:alpha="0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Don't have an account?"
+            android:typeface="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Sign up"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:typeface="serif"/>
+
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
+

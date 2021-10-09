@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">MUFLAR</string>
+    <string name="SendOTP">Send OTP</string>
+    <string name="phoneno">Phone no</string>
+    <string name="next">NEXT</string>
+    <string name="muflarcardno">Muflar card no</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="fogotpassword">FORGOT PASSWORD?</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="resendotp">Resend OTP</string>
+    <string name="verify">VERIFY</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="home">Home</string>
+    <string name="map_type">Map Type</string>
+    <string name="office">Office</string>
+    <string name="mani">Mani...</string>
+    <string name="karb">Karb...</string>
+    <string name="busroutedetail">Bus stop Detail</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="enter">enter</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="search">Search</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- face book -->
+    <string name="facebook_app_id">2153069118249330</string>
+    <string name="fb_login_protocol_scheme">fb2153069118249330</string>
+
+    <!-- google signin -->
+    <string name="default_web_client_id">789467627064-n15oo21untuh43bfk8de1tl5drgjkus6.apps.googleusercontent.com</string>
+
+    <array name="menuOptions">
+        <item>Plan ride</item>
+        <item>Bus route details</item>
+        <item>Bus stop details</item>
+        <item>Top-up history</item>
+        <item>Ride history</item>
+        <item>Edit profile</item>
+    </array>
+</resources>

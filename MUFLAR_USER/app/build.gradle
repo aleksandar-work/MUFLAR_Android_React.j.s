@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+//repositories {
+//    mavenCentral()
+//}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
+    defaultConfig {
+        applicationId "muflar.com.muflar"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('keystore/debug.keystore')
+            keyAlias 'muflar_user'
+            keyPassword 'aaaaaa'
+            storePassword 'aaaaaa'
+        }
+        /*
+        release {
+            storeFile file('release.keystore')
+            storePassword "mystorepassword"
+            keyAlias "mykeyalias"
+            keyPassword "mykeypassword"
+        }
+        */
+    }
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27+'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.android.support:support-v4:27+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:appcompat-v7:27+'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.android.gms:play-services-maps:15.0.1'
+    compile 'com.google.android.gms:play-services-location:15.0.1'
+    compile 'com.google.android.gms:play-services-auth:15.0.1'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+    compile 'com.android.support:cardview-v7:27+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'nl.psdcompany:duo-navigation-drawer:2.0.8'
+    compile 'com.android.support:multidex:1.0.3'
+
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+//    compile 'com.squareup:otto:1.3.8'
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    compile 'com.tuyenmonkey:mkloader:1.4.0'
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+
+    compile 'com.android.support:percent:27.1.1'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.daasuu:EasingInterpolator:1.0.0'
+
+    implementation "com.github.skydoves:powermenu:2.0.5"
+    compile 'com.justkiddingbaby:vercodeedittext:1.0.5'
+    implementation 'com.redmadrobot:inputmask:3.4.4'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.2.61'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    compile project(':linkedin-sdk')
+
+    compile ('com.lamudi.phonefield:phone-field:0.1.3@aar') {
+        transitive = true
+    }
+
+}

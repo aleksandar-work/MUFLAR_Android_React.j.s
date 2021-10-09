@@ -1,0 +1,568 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorred"
+                android:textSize="18dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="70dp"
+                android:gravity="left"
+                android:layout_marginBottom="10dp"
+                android:text="Edit Profile"/>
+
+
+            <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+                android:padding="10dp"
+       android:orientation="horizontal"
+       android:layout_marginTop="30dp"
+
+                android:gravity="center">
+
+       <TextView
+           android:layout_width="125dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:text="First Name : "/>
+
+
+
+                <EditText
+                    android:id="@+id/et_firstname"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text=""
+                   android:textSize="15dp"
+                    android:hint="Debanjan"
+
+
+                   android:background="@android:color/transparent"
+                    android:gravity="center_vertical">
+
+                </EditText>
+
+
+   </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Last Name : "/>
+
+
+
+                <EditText
+                    android:id="@+id/et_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+                    android:hint="Das"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+
+            <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="125dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+                <!--android:text="Bus route no : "/>-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_bus_route"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text=""-->
+                    <!--android:hint="34B/1"-->
+
+            <!--android:textSize="15dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="10dp"/>-->
+
+
+    <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="#c0c0c0"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--&gt;</View>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Bus ID: "/>
+
+
+                <EditText
+                    android:id="@+id/et_bus_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:hint="WB01-4568"
+                    android:textSize="15dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+
+            <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="125dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="Password : "/>-->
+
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text=""-->
+                    <!--android:hint="* * * * * * *"-->
+            <!--android:textSize="15dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="10dp"/>-->
+
+
+    <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="#c0c0c0"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--&gt;</View>-->
+
+
+            <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="125dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="Confirm Password : "/>-->
+
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_confirm_password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text=""-->
+                    <!--android:hint="* * * * * * *"-->
+            <!--android:textSize="15dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="10dp"/>-->
+
+
+    <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="#c0c0c0"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--&gt;</View>-->
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:orientation="horizontal"
+                android:gravity="center">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Phone : "/>
+
+
+
+                <EditText
+                    android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                    android:inputType="phone"
+            android:text=""
+                    android:hint="9632654896"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+
+        
+        <!--<Button-->
+            <!--android:id="@+id/btn_otp"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:text="SEND OTP"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@drawable/button_shape"/>-->
+
+    </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:orientation="horizontal"
+                android:gravity="center">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Email : "/>
+
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:hint="debanjan.anjan@gmail.com"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_evp"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:text="SEND EVP"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="10dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@drawable/button_shape"/>-->
+
+    </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="A/C no: "/>
+
+
+                <EditText
+                    android:id="@+id/et_ac_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:inputType="number"
+                    android:hint="254689652354"
+                    android:textSize="15dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:orientation="horizontal"
+                android:gravity="center">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="IFCS code : "/>
+
+
+
+                <EditText
+                    android:id="@+id/et_ifcs_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+                    android:hint="SBI5698574"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:orientation="horizontal"
+                android:gravity="center">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Address: "/>
+
+
+                <EditText
+                    android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+                    android:hint="Block 962,Shyambazar,Kolkata"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                ></View>
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:orientation="horizontal"
+                android:gravity="center">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Pin Code: "/>
+
+
+
+                <EditText
+                    android:id="@+id/et_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+                    android:hint="700165"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="#c0c0c0"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--&gt;</View>-->
+
+
+            <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp"-->
+
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="125dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:text="Marital : "/>-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_marital"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text=""-->
+                    <!--android:hint="S"-->
+            <!--android:textSize="15dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="10dp"/>-->
+
+
+    <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.1dp"-->
+                <!--android:background="#c0c0c0"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--&gt;</View>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#c0c0c0"></View>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/bt_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Save" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

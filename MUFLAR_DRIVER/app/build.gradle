@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.muflar_driver"
+        minSdkVersion 19
+        buildToolsVersion '26.0.2'
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:design:27+'
+    implementation 'com.android.support:support-v4:27+'
+    implementation 'com.android.support:appcompat-v7:27+'
+    testImplementation 'junit:junit:4.12'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.android.support:multidex:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services:11.0.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    compile 'com.android.support:percent:27.1.1'
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+
+    compile 'com.tuyenmonkey:mkloader:1.4.0'
+
+    compile ('com.lamudi.phonefield:phone-field:0.1.3@aar') {
+        transitive = true
+    }
+    compile 'com.justkiddingbaby:vercodeedittext:1.0.5'
+    implementation 'com.redmadrobot:inputmask:3.4.4'
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Feed_route"
+
+            android:title="Feed_route" />
+        <item
+            android:id="@+id/Top-up_history"
+
+            android:title="Top-up history" />
+        <item
+            android:id="@+id/Ride_history"
+
+            android:title="Ride history" />
+        <item
+            android:id="@+id/Ad_history"
+
+            android:title="Ad history" />
+        <item
+            android:id="@+id/Payment_history"
+
+            android:title="Payment history" />
+        <item
+            android:id="@+id/Edit_profile"
+
+            android:title="Edit profile" />
+    </group>
+
+
+
+</menu>

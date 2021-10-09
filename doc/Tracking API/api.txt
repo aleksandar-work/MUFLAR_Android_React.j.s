@@ -1,0 +1,5 @@
+(GET) http://54.179.159.226:5000/busroute
+(GET) http://54.179.159.226:5000/busroute/S12345678
+
+
+http://localhost:5000/busroute/S12345678

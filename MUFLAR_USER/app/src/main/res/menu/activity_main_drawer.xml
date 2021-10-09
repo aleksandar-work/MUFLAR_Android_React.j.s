@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/plan_ride"
+            android:title="Plan ride" />
+        <item
+            android:id="@+id/bus_route"
+            android:title="Bus route details" />
+        <item
+            android:id="@+id/bus_stop"
+            android:title="Bus stop details" />
+
+        <item
+            android:id="@+id/top_up"
+            android:title="Top-up history" />
+        <item
+            android:id="@+id/ride_history"
+            android:title="Ride history" />
+        <item
+            android:id="@+id/edit_profile"
+            android:title="Edit profile" />
+
+    </group>
+
+   <!-- <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log out" />
+    </group>-->
+
+
+</menu>

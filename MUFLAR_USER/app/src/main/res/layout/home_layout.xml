@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button_change_map_style"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:text="Map Type" />-->
+    <Button
+        android:id="@+id/button_change_map_style"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_black"
+        android:gravity="center"
+        android:text="@string/map_type"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:lines="1"
+            android:id="@+id/et_from"
+            android:layout_width="match_parent"
+            android:hint="@string/from"
+            android:textStyle="italic"
+            android:textSize="12dp"
+            android:textColor="@color/colorred"
+            android:textColorHint="@color/colorred"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/shaded_shape"
+            android:layout_height="35dp" />
+        <EditText
+            android:lines="1"
+            android:id="@+id/et_to"
+            android:layout_width="match_parent"
+            android:hint="@string/to"
+            android:textStyle="italic"
+            android:textSize="12dp"
+            android:textColor="@color/colorred"
+            android:textColorHint="@color/colorred"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/shaded_shape"
+            android:layout_height="35dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/shaded_shape"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textAllCaps="false"
+                android:textColor="@color/colorred"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/office"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorred"
+                android:background="@drawable/shaded_shape"/>
+            <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/mani"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:layout_marginRight="3dp"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/colorred"-->
+            <!--android:background="@drawable/shaded_shape"/>-->
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Search"
+                android:layout_marginLeft="20dp"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:background="@drawable/shaded_shape"
+                android:backgroundTint="@color/colorred"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_view"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/muflarloading"
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:background="@drawable/loading_background"
+        />
+
+</RelativeLayout>

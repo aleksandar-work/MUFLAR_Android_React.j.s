@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorred"
+            android:textSize="18dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="70dp"
+            android:gravity="left"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="10dp"
+            android:text="Top-Up History"/>
+
+        <ListView
+            android:id="@+id/list_topup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:clickable="true"
+        android:id="@+id/loading_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/muflarloading"
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:background="@drawable/loading_background"
+        />
+
+</RelativeLayout>

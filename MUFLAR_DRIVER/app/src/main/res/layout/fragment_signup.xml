@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/fragmentloginKenBurnsView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/fragmentloginLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:alpha="1"
+        android:src="@drawable/muflar"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="50%" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_put_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_marginTopPercent="50%">
+
+        <RelativeLayout
+            android:id="@+id/form_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:padding="30dp">
+
+            <com.lamudi.phonefield.PhoneInputLayout
+                android:id="@+id/phone_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/mainImageView1"
+                android:layout_alignTop="@id/mainImageView1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/mainImageView1"
+                android:background="@null"
+                android:hint="Phone number"
+                android:inputType="phone"
+
+                />
+
+            <!--<EditText-->
+                <!--android:id="@+id/phone_number_et"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@id/mainImageView1"-->
+                <!--android:layout_alignTop="@id/mainImageView1"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_toRightOf="@id/mainImageView1"-->
+                <!--android:background="@null"-->
+                <!--android:ems="10"-->
+                <!--android:hint="Phone number"-->
+                <!--android:inputType="phone"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@id/phone_number_et"-->
+                <!--android:layout_marginTop="@dimen/login_horizontalline_spacing"-->
+                <!--android:background="#111111" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_send_opt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/login_button"
+            app:layout_marginTopPercent="55%">
+
+            <TextView
+                android:id="@+id/button_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="@string/SendOTP"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_verify_otp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_marginTopPercent="50%">
+
+        <RelativeLayout
+            android:id="@+id/layout_put_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:padding="30dp">
+
+            <!--<EditText-->
+            <!--android:id="@+id/verify_opt_et"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@id/mainImageView1"-->
+            <!--android:layout_alignTop="@id/mainImageView1"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_toRightOf="@id/mainImageView1"-->
+            <!--android:background="@null"-->
+            <!--android:ems="10"-->
+            <!--android:hint="Phone number"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="20sp" />-->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Enter OTP" />
+
+            <com.jkb.vcedittext.VerificationCodeEditText
+                android:id="@+id/verify_otp_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                app:bottomLineHeight="2dp"
+                app:bottomLineNormalColor="@color/gravy_light"
+                app:bottomLineSelectedColor="@color/colorAccent"
+                app:figures="6"
+                app:selectedBackgroundColor="@color/colorPrimary_alpha33"
+                app:verCodeMargin="10dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/verify_otp_et"
+                android:layout_marginTop="5dp"
+                android:text="Resend OTP" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_verify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/login_button"
+            app:layout_marginTopPercent="55%">
+
+            <TextView
+                android:id="@+id/button_label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="@string/verify"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_put_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_marginTopPercent="50%">
+
+        <RelativeLayout
+            android:id="@+id/form_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/bus_id_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/mainImageView1"
+                android:layout_alignTop="@id/mainImageView1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/mainImageView1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Bus ID"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/sperator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bus_id_et"
+                android:layout_marginTop="@dimen/login_horizontalline_spacing"
+                android:background="#111111" />
+
+            <EditText
+                android:id="@+id/bus_route_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sperator2"
+                android:layout_alignBottom="@id/mainImageView1"
+                android:layout_alignTop="@id/mainImageView1"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/mainImageView1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Bus Route"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bus_route_et"
+                android:layout_marginTop="@dimen/login_horizontalline_spacing"
+                android:background="#111111" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_send_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/login_button"
+            app:layout_marginTopPercent="55%">
+
+            <TextView
+                android:id="@+id/button_card_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="@string/next"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_marginTopPercent="50%">
+
+        <RelativeLayout
+            android:id="@+id/form_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/mainImageView1"
+                android:layout_alignTop="@id/mainImageView1"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <View
+                android:id="@+id/sperator1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/password_et"
+                android:layout_marginTop="@dimen/login_horizontalline_spacing"
+                android:background="#111111" />
+
+            <EditText
+                android:id="@+id/confirm_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sperator1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:typeface="serif" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/confirm_password_et"
+                android:layout_marginTop="@dimen/login_horizontalline_spacing"
+                android:background="#111111" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/login_button"
+            app:layout_marginTopPercent="55%">
+
+            <TextView
+                android:id="@+id/label_button_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="@string/next"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>
